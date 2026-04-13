@@ -9,7 +9,6 @@
   backdrop-filter: blur(12px);
 
   &__inner {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -20,22 +19,34 @@
   &__logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
   }
 
   &__logo-icon {
-    color: var(--color-accent);
-  }
-
-  &__logo-text {
-    font-size: 20px;
-    font-weight: 700;
+    height: 40px;
+    width: auto;
     color: var(--color-text);
   }
 
-  &__logo-accent {
-    color: var(--color-accent);
+  &__logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__logo-name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--color-text);
+  }
+
+  &__logo-sub {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--color-muted);
   }
 
   &__actions {
@@ -44,7 +55,6 @@
     gap: 10px;
   }
 
-  // Language dropdown
   &__lang {
     position: relative;
   }
@@ -106,7 +116,6 @@
     }
   }
 
-  // Theme switch
   $switch-w: 72px;
   $switch-h: 36px;
   $switch-pad: 4px;

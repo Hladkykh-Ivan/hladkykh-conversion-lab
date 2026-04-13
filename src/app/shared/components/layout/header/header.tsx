@@ -4,6 +4,10 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useLanguage, useTheme } from "@/app/core/providers";
 import type { Locale } from "@/i18n";
+import LogoIcon from "@/assets/icons/logo.svg";
+import ChevronDownIcon from "@/assets/icons/chevron-down.svg";
+import SunIcon from "@/assets/icons/sun.svg";
+import MoonIcon from "@/assets/icons/moon.svg";
 import "./header.scss";
 
 const languages: { code: Locale; label: string }[] = [
@@ -31,22 +35,11 @@ export default function Header() {
     <header className="header">
       <div className="header__inner">
         <Link href="/" className="header__logo">
-          <svg
-            className="header__logo-icon"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-          >
-            <rect width="32" height="32" rx="8" fill="currentColor" />
-            <path
-              d="M9 8v16h3v-6.5h8V24h3V8h-3v6.5h-8V8z"
-              fill="#fff"
-            />
-          </svg>
-          <span className="header__logo-text">
-            Conversion<span className="header__logo-accent">Lab</span>
-          </span>
+          <LogoIcon className="header__logo-icon" />
+          <div className="header__logo-text">
+            <span className="header__logo-name">HLADKYKH IVAN</span>
+            <span className="header__logo-sub">CONVERSION LAB</span>
+          </div>
         </Link>
 
         <div className="header__actions">
@@ -57,15 +50,7 @@ export default function Header() {
               aria-label="Switch language"
             >
               {locale.toUpperCase()}
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M3 4.5l3 3 3-3"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <ChevronDownIcon />
             </button>
 
             {langOpen && (
@@ -93,13 +78,8 @@ export default function Header() {
             aria-label="Toggle theme"
           >
             <div className={`header__theme-thumb ${theme === "dark" ? "header__theme-thumb--dark" : ""}`} />
-            <svg className={`header__theme-icon ${theme === "light" ? "header__theme-icon--active" : ""}`} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="5" />
-              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-            </svg>
-            <svg className={`header__theme-icon ${theme === "dark" ? "header__theme-icon--active" : ""}`} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-            </svg>
+            <SunIcon className={`header__theme-icon ${theme === "light" ? "header__theme-icon--active" : ""}`} />
+            <MoonIcon className={`header__theme-icon ${theme === "dark" ? "header__theme-icon--active" : ""}`} />
           </div>
         </div>
       </div>
