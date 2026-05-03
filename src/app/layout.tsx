@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Conversion Lab",
+  title: "Conversion Helper",
   description:
-    "Помогаю бизнесам і арбітражникам отримувати більше заявок з того ж рекламного бюджету.",
+    "",
 };
 
 export default function RootLayout({
