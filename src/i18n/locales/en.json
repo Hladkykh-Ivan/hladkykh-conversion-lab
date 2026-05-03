@@ -1,5 +1,18 @@
 {
   "header": {
     "contact": "Contact"
+  },
+  "examples": {
+    "title": "Landing page examples",
+    "card": {
+      "items": [
+        "Stop wasting money on low-converting traffic",
+        "Increase conversions from the same ad budget",
+        "Fix broken funnel between ads and landing page",
+        "Get full tracking setup (Meta Pixel included)"
+      ],
+      "cta": "Get Started",
+      "ctaHint": "Click to contact us on Telegram"
+    }
   }
 }
