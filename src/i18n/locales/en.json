@@ -1,6 +1,62 @@
 {
+  "meta": {
+    "home": {
+      "title": "Conversion Helper — Landing pages for Meta Ads traffic",
+      "description": "Quick deploy of a landing page with Meta Pixel pre-installed. No back-and-forth, no endless revisions. Payment after the work is fully completed."
+    },
+    "sample1": {
+      "title": "Template 1 — Conversion Helper",
+      "description": "Sample landing page in a green palette. Quick deploy with Meta Pixel pre-installed."
+    },
+    "sample2": {
+      "title": "Template 2 — Conversion Helper",
+      "description": "Sample landing page in a purple palette. Quick deploy with Meta Pixel pre-installed."
+    },
+    "sample3": {
+      "title": "Template 3 — Conversion Helper",
+      "description": "Sample landing page in a blue palette. Quick deploy with Meta Pixel pre-installed."
+    }
+  },
   "header": {
     "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Open for orders",
+    "titleStart": "Landings for",
+    "titleAccent": "Meta Ads traffic",
+    "subtitle": "Quick deploy with Meta Pixel pre-installed. No back-and-forth, no endless revisions.",
+    "telegramCta": "Telegram",
+    "whatsappCta": "WhatsApp",
+    "examplesCta": "See examples"
+  },
+  "process": {
+    "title": "How it works",
+    "subtitle": "A simple flow from request to a working link",
+    "steps": [
+      {
+        "title": "Design",
+        "description": "I work with your existing design or create one from scratch"
+      },
+      {
+        "title": "Content and Meta Pixel",
+        "description": "I add your copy, images, and install Meta Pixel"
+      },
+      {
+        "title": "Deploy",
+        "description": "Published to hosting — you get a working link"
+      }
+    ],
+    "pricing": {
+      "label": "Per landing page",
+      "amount": "$20",
+      "perks": [
+        "Responsive landing with Meta Pixel installed",
+        "Hosting and deployment included",
+        "Payment after the work is fully completed",
+        "Constant contact via Telegram or WhatsApp"
+      ]
+    },
+    "extraNote": "Happy to help with other technical tasks — just send a message"
   },
   "examples": {
     "title": "Landing page examples",

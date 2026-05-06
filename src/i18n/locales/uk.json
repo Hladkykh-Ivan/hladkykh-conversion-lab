@@ -1,6 +1,62 @@
 {
+  "meta": {
+    "home": {
+      "title": "Conversion Helper — Лендінги під трафік з Meta Ads",
+      "description": "Швидкий деплой лендінгу з налаштованим Meta Pixel. Без зайвих ітерацій. Оплата після виконаної роботи. Контакт у Telegram або WhatsApp."
+    },
+    "sample1": {
+      "title": "Шаблон 1 — Conversion Helper",
+      "description": "Приклад лендінга в зеленій палітрі. Швидкий деплой із налаштованим Meta Pixel."
+    },
+    "sample2": {
+      "title": "Шаблон 2 — Conversion Helper",
+      "description": "Приклад лендінга в фіолетовій палітрі. Швидкий деплой із налаштованим Meta Pixel."
+    },
+    "sample3": {
+      "title": "Шаблон 3 — Conversion Helper",
+      "description": "Приклад лендінга в синій палітрі. Швидкий деплой із налаштованим Meta Pixel."
+    }
+  },
   "header": {
     "contact": "Зв'язатись"
+  },
+  "hero": {
+    "eyebrow": "Доступний для замовлень",
+    "titleStart": "Лендінги під",
+    "titleAccent": "трафік з Meta Ads",
+    "subtitle": "Швидкий деплой із налаштованим Meta Pixel. Без зайвих ітерацій і правок по колу.",
+    "telegramCta": "Telegram",
+    "whatsappCta": "WhatsApp",
+    "examplesCta": "Подивитись приклади"
+  },
+  "process": {
+    "title": "Як це працює",
+    "subtitle": "Простий процес від запиту до робочого посилання",
+    "steps": [
+      {
+        "title": "Дизайн",
+        "description": "Працюю за твоїм готовим дизайном або створюю його з нуля"
+      },
+      {
+        "title": "Контент і Meta Pixel",
+        "description": "Додаю текст, зображення й встановлюю Meta Pixel"
+      },
+      {
+        "title": "Деплой",
+        "description": "Публікую на хостингу — отримуєш робоче посилання"
+      }
+    ],
+    "pricing": {
+      "label": "Один лендінг",
+      "amount": "$20",
+      "perks": [
+        "Адаптивний лендінг із Meta Pixel",
+        "Хостинг і деплой включені",
+        "Оплата після повністю виконаної роботи",
+        "Постійний контакт у Telegram або WhatsApp"
+      ]
+    },
+    "extraNote": "Допоможу й з іншими технічними задачами — просто напиши"
   },
   "examples": {
     "title": "Приклади лендінгів",

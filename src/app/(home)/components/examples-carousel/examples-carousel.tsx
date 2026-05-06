@@ -1,19 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ComponentType } from "react";
 import { useLanguage } from "@/app/core/providers";
-import ExampleCard from "./example-card";
+import {
+  Parallax,
+  Template1,
+  Template2,
+  Template3,
+  type ParallaxType,
+} from "@/app/shared/components";
 import "./examples-carousel.scss";
 
-type Theme = "green" | "purple" | "blue";
+type SampleCard = {
+  key: string;
+  Component: ComponentType;
+  url: string;
+  parallax: ParallaxType;
+};
 
-const cards: { theme: Theme; exampleUrl: string }[] = [
-  { theme: "green", exampleUrl: "https://conversion-helper-green.fly.dev" },
-  { theme: "purple", exampleUrl: "https://conversion-helper-violet.fly.dev" },
-  { theme: "blue", exampleUrl: "https://conversion-helper-blue.fly.dev" },
+const cards: SampleCard[] = [
+  { key: "sample-1", Component: Template1, url: "/sample-1", parallax: "slide-left" },
+  { key: "sample-2", Component: Template2, url: "/sample-2", parallax: "slide-bottom" },
+  { key: "sample-3", Component: Template3, url: "/sample-3", parallax: "slide-right" },
 ];
 
-const slotForOffset = (offset: number) => {
+type SlotPosition = "left" | "center" | "right";
+
+const slotForOffset = (offset: number): SlotPosition => {
   if (offset === 0) return "center";
   if (offset === 1) return "right";
   return "left";
@@ -25,17 +38,20 @@ export default function ExamplesCarousel() {
 
   return (
     <section className="examples-carousel">
-      <h2 className="examples-carousel__title">{t.examples.title}</h2>
+      <Parallax type="slide-top" duration={1000}>
+        <h2 className="examples-carousel__title">{t.examples.title}</h2>
+      </Parallax>
 
       <div className="examples-carousel__stage">
         {cards.map((card, index) => {
           const offset = (index - activeIndex + cards.length) % cards.length;
           const slot = slotForOffset(offset);
           const isCenter = slot === "center";
+          const { Component } = card;
 
           const activate = () => {
             if (isCenter) {
-              window.open(card.exampleUrl, "_blank", "noopener,noreferrer");
+              window.open(card.url, "_blank", "noopener,noreferrer");
             } else {
               setActiveIndex(index);
             }
@@ -43,15 +59,15 @@ export default function ExamplesCarousel() {
 
           return (
             <div
-              key={card.theme}
+              key={card.key}
               className={`examples-carousel__slot examples-carousel__slot--${slot}`}
               onClick={activate}
               role="button"
               tabIndex={0}
               aria-label={
                 isCenter
-                  ? `Open ${card.theme} landing page example`
-                  : `Show ${card.theme} example`
+                  ? `Open ${card.key} landing page example`
+                  : `Show ${card.key} example`
               }
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
@@ -60,7 +76,9 @@ export default function ExamplesCarousel() {
                 }
               }}
             >
-              <ExampleCard theme={card.theme} />
+              <Parallax type={card.parallax} duration={2000} delay={100}>
+                <Component />
+              </Parallax>
             </div>
           );
         })}

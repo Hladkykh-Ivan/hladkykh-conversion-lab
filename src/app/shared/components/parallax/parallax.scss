@@ -1,0 +1,39 @@
+.parallax {
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+
+  &--slide-left {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  &--slide-right {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  &--slide-top {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  &--slide-bottom {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  &--scale {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  &--opacity {
+    opacity: 0;
+  }
+
+  &--in-view {
+    opacity: 1;
+    transform: none;
+  }
+}

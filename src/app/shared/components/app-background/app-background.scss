@@ -1,0 +1,85 @@
+.app-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+  &__orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.45;
+    will-change: transform;
+
+    [data-theme="light"] & {
+      opacity: 0.22;
+    }
+
+    &--1 {
+      top: 8%;
+      left: 8%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, #b14bff 0%, transparent 70%);
+      animation: app-background-orb-a 22s ease-in-out infinite;
+    }
+
+    &--2 {
+      top: 38%;
+      right: 6%;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, #2563eb 0%, transparent 70%);
+      animation: app-background-orb-b 26s ease-in-out infinite;
+    }
+
+    &--3 {
+      bottom: 6%;
+      left: 32%;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, #d946ef 0%, transparent 70%);
+      animation: app-background-orb-c 30s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes app-background-orb-a {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(60px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 50px) scale(0.95);
+  }
+}
+
+@keyframes app-background-orb-b {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-50px, 30px) scale(1.05);
+  }
+  66% {
+    transform: translate(40px, -50px) scale(0.9);
+  }
+}
+
+@keyframes app-background-orb-c {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, 40px) scale(0.95);
+  }
+  66% {
+    transform: translate(-50px, -30px) scale(1.1);
+  }
+}
