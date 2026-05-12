@@ -103,7 +103,6 @@ export default function Process() {
           <div className="process__pricing-shine" aria-hidden="true" />
           <div className="process__pricing-content">
             <div className="process__pricing-head">
-              <span className="process__pricing-label">{p.pricing.label}</span>
               <div className="process__pricing-amount">{p.pricing.amount}</div>
             </div>
             <ul className="process__pricing-perks">

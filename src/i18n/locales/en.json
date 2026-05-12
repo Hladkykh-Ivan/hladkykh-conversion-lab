@@ -1,20 +1,20 @@
 {
   "meta": {
     "home": {
-      "title": "Conversion Helper — Landing pages for Meta Ads traffic",
-      "description": "Quick deploy of a landing page with Meta Pixel pre-installed. No back-and-forth, no endless revisions. Payment after the work is fully completed."
+      "title": "Conversion Helper — Landing pages for Paid traffic",
+      "description": "Quick deploy of a landing page with Analytics pre-installed. No back-and-forth, no endless revisions. Payment after the work is fully completed."
     },
     "sample1": {
       "title": "Template 1 — Conversion Helper",
-      "description": "Sample landing page in a green palette. Quick deploy with Meta Pixel pre-installed."
+      "description": "Sample landing page in a green palette. Quick deploy with Analytics pre-installed."
     },
     "sample2": {
       "title": "Template 2 — Conversion Helper",
-      "description": "Sample landing page in a purple palette. Quick deploy with Meta Pixel pre-installed."
+      "description": "Sample landing page in a purple palette. Quick deploy with Analytics pre-installed."
     },
     "sample3": {
       "title": "Template 3 — Conversion Helper",
-      "description": "Sample landing page in a blue palette. Quick deploy with Meta Pixel pre-installed."
+      "description": "Sample landing page in a blue palette. Quick deploy with Analytics pre-installed."
     }
   },
   "header": {
@@ -23,8 +23,8 @@
   "hero": {
     "eyebrow": "Open for orders",
     "titleStart": "Landings for",
-    "titleAccent": "Meta Ads traffic",
-    "subtitle": "Quick deploy with Meta Pixel pre-installed. No back-and-forth, no endless revisions.",
+    "titleAccent": "Analytics traffic",
+    "subtitle": "Quick deploy with Analytics pre-installed. No back-and-forth, no endless revisions.",
     "telegramCta": "Telegram",
     "whatsappCta": "WhatsApp",
     "examplesCta": "See examples"
@@ -35,11 +35,11 @@
     "steps": [
       {
         "title": "Design",
-        "description": "I work with your existing design or create one from scratch"
+        "description": "Work with a ready design or create one from scratch"
       },
       {
-        "title": "Content and Meta Pixel",
-        "description": "I add your copy, images, and install Meta Pixel"
+        "title": "Content and Analytics",
+        "description": "Add your text, images, and install Analytics"
       },
       {
         "title": "Deploy",
@@ -47,13 +47,12 @@
       }
     ],
     "pricing": {
-      "label": "Per landing page",
       "amount": "$20",
       "perks": [
-        "Responsive landing with Meta Pixel installed",
+        "Responsive landing with Analytics installed",
         "Hosting and deployment included",
         "Payment after the work is fully completed",
-        "Constant contact via Telegram or WhatsApp"
+        "Communication via Telegram or WhatsApp"
       ]
     },
     "extraNote": "Happy to help with other technical tasks — just send a message"
@@ -63,9 +62,9 @@
     "card": {
       "items": [
         "Stop wasting money on low-converting traffic",
-        "Increase conversions from the same ad budget",
+        "Increase conversions for the same ad budget",
         "Fix broken funnel between ads and landing page",
-        "Get full tracking setup (Meta Pixel included)"
+        "Get full tracking setup"
       ],
       "cta": "Get Started",
       "ctaHint": "Click to contact us on Telegram"
