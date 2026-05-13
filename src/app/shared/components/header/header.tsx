@@ -38,7 +38,7 @@ export default function Header() {
           <LogoIcon className="header__logo-icon" />
           <div className="header__logo-text">
             <span className="header__logo-name">HLADKYKH IVAN</span>
-            <span className="header__logo-sub">CONVERSION HELPER</span>
+            <span className="header__logo-sub">TRACKING LAYER</span>
           </div>
         </Link>
 
