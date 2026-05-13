@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Conversion Helper — Лендінги під трафік з Meta Ads";
+export const alt = "Tracking Layer — Лендінги під трафік з Аналітикою";
 export const size = {
   width: 1200,
   height: 630,

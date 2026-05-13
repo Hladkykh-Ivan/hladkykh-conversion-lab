@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       locale: locale === "en" ? "en_US" : "uk_UA",
       alternateLocale: locale === "en" ? "uk_UA" : "en_US",
-      siteName: "Conversion Helper",
+      siteName: "Tracking Layer",
     },
     twitter: {
       card: "summary_large_image",

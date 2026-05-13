@@ -50,7 +50,7 @@ export default function Template2() {
             </g>
           </svg>
         </div>
-        <h3 className="template-2__title">Conversion Helper</h3>
+        <h3 className="template-2__title">Tracking Layer</h3>
       </div>
 
       <ul className="template-2__list">
