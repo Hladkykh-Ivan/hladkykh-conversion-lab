@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Tracking Layer — Лендінги під трафік з Аналітикою";
+export const alt = "Tracking Layer — Landing Pages Built for Traffic & Analytics";
 export const size = {
   width: 1200,
   height: 630,
@@ -49,7 +49,7 @@ export default async function OGImage() {
               boxShadow: "0 0 16px #22c55e",
             }}
           />
-          Доступний для замовлень
+          Available for orders
         </div>
         <div
           style={{
@@ -62,7 +62,7 @@ export default async function OGImage() {
             marginBottom: "28px",
           }}
         >
-          <span>Лендінги під</span>
+          <span>Landing pages built for</span>
           <span
             style={{
               backgroundImage:
@@ -71,7 +71,7 @@ export default async function OGImage() {
               color: "transparent",
             }}
           >
-            трафік з Meta Ads
+            traffic & analytics
           </span>
         </div>
         <div
@@ -84,8 +84,7 @@ export default async function OGImage() {
             marginBottom: "40px",
           }}
         >
-          Швидкий деплой із налаштованим Meta Pixel. Оплата після виконаної
-          роботи.
+          Fast deployment with pre-configured analytics and tracking. Pay only after the work is done.
         </div>
         <div
           style={{
@@ -106,7 +105,7 @@ export default async function OGImage() {
               color: "transparent",
             }}
           >
-            $20 / лендінг
+            $20 / landing page
           </span>
           <span style={{ color: "rgba(255,255,255,0.3)" }}>•</span>
           <span>Telegram &amp; WhatsApp</span>
